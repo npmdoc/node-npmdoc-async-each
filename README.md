@@ -1,9 +1,13 @@
-# api documentation for  [async-each (v1.0.1)](https://github.com/paulmillr/async-each/)  [![npm package](https://img.shields.io/npm/v/npmdoc-async-each.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async-each) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async-each.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async-each)
+# npmdoc-async-each
+
+api documentation for  [async-each (v1.0.1)](https://github.com/paulmillr/async-each/)  [![npm package](https://img.shields.io/npm/v/npmdoc-async-each.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async-each) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async-each.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async-each)
 #### No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.
 
-[![NPM](https://nodei.co/npm/async-each.png?downloads=true)](https://www.npmjs.com/package/async-each)
+[![NPM](https://nodei.co/npm/async-each.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/async-each)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-async-each/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-async-each_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-async-each/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-async-each/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-async-each/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-async-each/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-async-each/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-async-each/build/screenCapture.npmPackageListing.svg)
 
@@ -52,17 +56,14 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "paulmillr",
-            "email": "paul@paulmillr.com"
+            "name": "paulmillr"
         },
         {
-            "name": "es128",
-            "email": "elan.shanker+npm@gmail.com"
+            "name": "es128"
         }
     ],
     "name": "async-each",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/paulmillr/async-each.git"
@@ -71,16 +72,6 @@
     "version": "1.0.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module async-each](#apidoc.module.async-each)
-
-
-
-# <a name="apidoc.module.async-each"></a>[module async-each](#apidoc.module.async-each)
 
 
 
