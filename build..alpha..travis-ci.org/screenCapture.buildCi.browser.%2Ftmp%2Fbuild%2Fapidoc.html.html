@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/paulmillr/async-each/"
-
-    >async-each (v1.0.1)</a>
+    <a href="https://github.com/paulmillr/async-each/">async-each (v1.0.1)</a>
 </h1>
 <h4>No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.async-each">module async-each</a><ol>
 
@@ -108,9 +101,9 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">async-each = function (items, next, callback) {
-  if (!Array.isArray(items)) throw new TypeError(&#x27;each() expects array as first argument&#x27;);
-  if (typeof next !== &#x27;function&#x27;) throw new TypeError(&#x27;each() expects function as second argument&#x27;);
-  if (typeof callback !== &#x27;function&#x27;) callback = Function.prototype; // no-op
+  if (!Array.isArray(items)) throw new TypeError('each() expects array as first argument');
+  if (typeof next !== 'function') throw new TypeError('each() expects function as second argument');
+  if (typeof callback !== 'function') callback = Function.prototype; // no-op
 
   if (items.length === 0) return callback(undefined, items);
 
@@ -176,3 +169,4 @@
     ]
 </div>
 </div>
+</body></html>

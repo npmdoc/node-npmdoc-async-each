@@ -61,12 +61,112 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.async-each">module async-each</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async-each.async-each">
+            function <span class="apidocSignatureSpan"></span>async-each
+            <span class="apidocSignatureSpan">(items, next, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async-each.toString">
+            function <span class="apidocSignatureSpan">async-each.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.async-each.toString">module async-each.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async-each.toString.toString">
+            function <span class="apidocSignatureSpan">async-each.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.async-each" id="apidoc.module.async-each">module async-each</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.async-each.async-each" id="apidoc.element.async-each.async-each">
+        function <span class="apidocSignatureSpan"></span>async-each
+        <span class="apidocSignatureSpan">(items, next, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">async-each = function (items, next, callback) {
+  if (!Array.isArray(items)) throw new TypeError(&#x27;each() expects array as first argument&#x27;);
+  if (typeof next !== &#x27;function&#x27;) throw new TypeError(&#x27;each() expects function as second argument&#x27;);
+  if (typeof callback !== &#x27;function&#x27;) callback = Function.prototype; // no-op
+
+  if (items.length === 0) return callback(undefined, items);
+
+  var transformed = new Array(items.length);
+  var count = 0;
+  var returned = false;
+
+  items.forEach(function(item, index) {
+    next(item, function(error, transformedItem) {
+      if (returned) return;
+      if (error) {
+        returned = true;
+        return callback(error);
+      }
+      transformed[index] = transformedItem;
+      count += 1;
+      if (count === items.length) return callback(undefined, transformed);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.async-each.toString" id="apidoc.element.async-each.toString">
+        function <span class="apidocSignatureSpan">async-each.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.async-each.toString" id="apidoc.module.async-each.toString">module async-each.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.async-each.toString.toString" id="apidoc.element.async-each.toString.toString">
+        function <span class="apidocSignatureSpan">async-each.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
