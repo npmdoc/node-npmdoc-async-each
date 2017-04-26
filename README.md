@@ -1,6 +1,7 @@
 # npmdoc-async-each
 
-api documentation for  [async-each (v1.0.1)](https://github.com/paulmillr/async-each/)  [![npm package](https://img.shields.io/npm/v/npmdoc-async-each.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async-each) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async-each.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async-each)
+#### basic api documentation for  [async-each (v1.0.1)](https://github.com/paulmillr/async-each/)  [![npm package](https://img.shields.io/npm/v/npmdoc-async-each.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async-each) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async-each.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async-each)
+
 #### No-bullshit, ultra-simple, 35-lines-of-code async parallel forEach / map function for JavaScript.
 
 [![NPM](https://nodei.co/npm/async-each.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/async-each)
@@ -69,7 +70,8 @@ api documentation for  [async-each (v1.0.1)](https://github.com/paulmillr/async-
         "url": "git://github.com/paulmillr/async-each.git"
     },
     "scripts": {},
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "bin": {}
 }
 ```
 
